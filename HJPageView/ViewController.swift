@@ -12,14 +12,33 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
+        let title = ["娱乐","娱乐","娱乐乐","娱乐","娱乐乐","娱乐","娱乐乐","娱乐","娱乐","娱乐"]
+        
+        let style = TitleStyle();
+        
+//        style.normalColor = UIColor.randomColor()
+        
+        style.isScrollEnable = true
+        var childVcs = [UIViewController]()
+        
+        for _ in 0..<title.count {
+            let vc = UIViewController()
+            
+            vc.view.backgroundColor = UIColor.randomColor()
+            childVcs .append(vc)
+        }
+        
+        let pagFrame = CGRect(x: 0, y: 64, width: view.bounds.width, height: view.bounds.height - 64)
+        
+        
+        let HJPage = PageView(frame: pagFrame, titles: title, childVcs: childVcs, parentVc: self, style : style)
+        
+        view .addSubview(HJPage)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

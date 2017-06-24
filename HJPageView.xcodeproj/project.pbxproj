@@ -12,6 +12,11 @@
 		A3651B6C1EEE8C5600A71336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3651B6A1EEE8C5600A71336 /* Main.storyboard */; };
 		A3651B6E1EEE8C5600A71336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3651B6D1EEE8C5600A71336 /* Assets.xcassets */; };
 		A3651B711EEE8C5600A71336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3651B6F1EEE8C5600A71336 /* LaunchScreen.storyboard */; };
+		A3651B7A1EEE8CD600A71336 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3651B791EEE8CD600A71336 /* PageView.swift */; };
+		A3651B7C1EEE8CF200A71336 /* TiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3651B7B1EEE8CF200A71336 /* TiteView.swift */; };
+		A3651B7E1EEE8D0700A71336 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3651B7D1EEE8D0700A71336 /* ContenView.swift */; };
+		A3651B801EEE955C00A71336 /* TitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3651B7F1EEE955C00A71336 /* TitleStyle.swift */; };
+		A3E2A8741EEF8490006B0A5D /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2A8731EEF8490006B0A5D /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A3651B6D1EEE8C5600A71336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3651B701EEE8C5600A71336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3651B721EEE8C5600A71336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3651B791EEE8CD600A71336 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		A3651B7B1EEE8CF200A71336 /* TiteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiteView.swift; sourceTree = "<group>"; };
+		A3651B7D1EEE8D0700A71336 /* ContenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
+		A3651B7F1EEE955C00A71336 /* TitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleStyle.swift; sourceTree = "<group>"; };
+		A3E2A8731EEF8490006B0A5D /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		A3651B651EEE8C5600A71336 /* HJPageView */ = {
 			isa = PBXGroup;
 			children = (
+				A3E2A8731EEF8490006B0A5D /* UIColor-Extension.swift */,
+				A3651B781EEE8CA700A71336 /* PageView */,
 				A3651B661EEE8C5600A71336 /* AppDelegate.swift */,
 				A3651B681EEE8C5600A71336 /* ViewController.swift */,
 				A3651B6A1EEE8C5600A71336 /* Main.storyboard */,
@@ -62,6 +74,17 @@
 				A3651B721EEE8C5600A71336 /* Info.plist */,
 			);
 			path = HJPageView;
+			sourceTree = "<group>";
+		};
+		A3651B781EEE8CA700A71336 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				A3651B791EEE8CD600A71336 /* PageView.swift */,
+				A3651B7F1EEE955C00A71336 /* TitleStyle.swift */,
+				A3651B7B1EEE8CF200A71336 /* TiteView.swift */,
+				A3651B7D1EEE8D0700A71336 /* ContenView.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3651B691EEE8C5600A71336 /* ViewController.swift in Sources */,
+				A3651B7A1EEE8CD600A71336 /* PageView.swift in Sources */,
+				A3651B7E1EEE8D0700A71336 /* ContenView.swift in Sources */,
+				A3651B7C1EEE8CF200A71336 /* TiteView.swift in Sources */,
+				A3651B801EEE955C00A71336 /* TitleStyle.swift in Sources */,
+				A3E2A8741EEF8490006B0A5D /* UIColor-Extension.swift in Sources */,
 				A3651B671EEE8C5600A71336 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +325,7 @@
 				A3651B771EEE8C5600A71336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
